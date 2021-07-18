@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Student Result Management | Login</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <style>
+			p {
+                font-size: 14px;
+                font-weight: 100;
+                line-height: 20px;
+                letter-spacing: 0.5px;
+                margin: 20px 0 30px;
+            }
+
+            
+            a {
+                color: #333;
+                font-size: 14px;
+                text-decoration: none;
+                margin: 15px 0;
+            }
+
+            button {
+                border-radius: 20px;
+                border: 1px solid #FF4B2B;
+                background-color: #A1416C;
+                color: #FFFFFF;
+                font-size: 12px;
+                font-weight: bold;
+                padding: 12px 45px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                transition: transform 80ms ease-in;
+            }
+			
+                button:active {
+                    transform: scale(0.95);
+                }
+
+                button:focus {
+                    outline: none;
+                }
+
+                button.ghost {
+                    background-color: transparent;
+                    border-color: #FFFFFF;
+                }
+			.rad-txt-primary{
+				color:#1C7EBB;
+			}
+			.rad-bg-primary{
+				background:#1C7EBB;
+			}
+			.rad-txt-success{
+				color:#23AE89;
+			}
+			.rad-bg-success{
+				background:#23AE89;
+			}
+			.rad-txt-danger{
+				color:#E94B3B;
+			}
+			.rad-bg-danger{
+				background:#E94B3B;
+			}
+			.rad-txt-warning{
+				color:#F98E33;
+			}
+			.rad-bg-warning{
+				background:#F98E33;
+			}
+			.rad-txt-violet{
+				color:#6A55C2;
+			}
+			.rad-bg-violet{
+				background:#6A55C2;
+			}
+			.rad-info-box{	
+				margin-bottom:16px;
+				box-shadow:1px 1px 2px 0 #CCCCCC;
+				padding:20px;
+				box-shadow:0 2px 5px 0 rgba(0,0,0,.26);
+				background:$base-color !important;
+			}
+
+			.rad-info-box i{
+				display:block;
+				background-clip:padding-box;
+				margin-right:15px;
+				height:60px;
+				width:60px;
+				border-radius:100%;
+				line-height:60px;
+				text-align:center;
+				font-size:4.4em;
+				position:absolute;	
+			}
+
+			.rad-info-box .value,
+			.rad-info-box .heading{
+				display:block;	
+				position:relative;
+				color: $text-color;
+				text-align:right;
+				z-index:10;
+			}
+
+			.rad-info-box .heading{
+				font-size:2rem;
+				font-weight:300;
+				text-transform:uppercase;
+			}
+
+			.rad-info-box .value{
+				font-size:3rem;
+				font-weight:600;
+				margin-top:0.5rem;
+			}
+
+				
+		.copyright {
+		  padding: 28px 0;
+		  margin-top: 55px;
+		  background-color: #202020; }
+		  .copyright span,
+		  .copyright a {
+			color: #878787;
+			-webkit-transition: all 0.3s linear;
+			-o-transition: all 0.3s linear;
+			transition: all 0.3s linear; }
+		  .copyright a:hover {
+			color:bisque; text-decoration: none;}
+
+		.copyright-menu ul {
+		  text-align: right;
+		  margin: 0; }
+
+		.copyright-menu li {
+		  display: inline-block;
+		  padding-left: 20px; }
+
+		</style>
+    </head>
+    
+    <body>
+    	<!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color:blanchedalmond;color:navy;">
+			<a class="navbar-brand" href="#"><h1 ><b>RNSIT</b></h1></a>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" style="font-size: 1.3rem;">Dashboard</a>
+                </li>
+                <li class="nav-item "><a class="nav-link" href="students.html" style="font-size: 1.3rem;">Students</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="result.html" style="font-size: 1.3rem;">Result</a>
+                </li>
+            </ul>
+           
+            <button class="btn btn-outline-dark my-0 bg-light text-dark" type="submit"><strong>Sign Out</strong></button>      
+        </nav>
+		
+		<!--Content-->
+		<br>
+		
+		<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-xs-6">
+						<div class="rad-info-box rad-txt-success">
+							<i class="fa fa-graduation-cap"></i>
+							<span class="heading">Students</span>
+							<span class="value"><span>80</span></span>
+						</div>
+					</div>
+					<div class="col-lg-6 col-xs-6">
+						<div class="rad-info-box rad-txt-primary">
+							<i class="fa fa-list-alt"></i>
+							<span class="heading">Result</span>
+							<span class="value"><span>90%</span></span>
+						</div>
+					</div>
+					
+				</div>
+		</div>
+		<!--Footer-->
+		<div class="copyright" style="bottom:0;position: fixed;width: 100%">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <span style="color: cornsilk">Copyright © 2019, All Rights Reserved</span>
+                    </div>
+                    <!-- End Col -->
+                    <div class="col-md-6">
+                        <div class="copyright-menu">
+                            <ul>
+                                
+                                <li>
+                                    <a href="	">Dashboard</a>
+                                </li>
+                                <li>
+                                    <a href="students.html">Students</a>
+                                </li>
+                                <li>
+                                    <a href="result.html">Result</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                   
+                </div>
+              
+            </div>
+            
+        </div>
+        <!--<div id="back-to-top" class="back-to-top">
+            <button class="btn btn-dark" title="Back to Top" style="display: block;">
+                <i class="fa fa-angle-up"></i>
+            </button>
+        </div>-->
+	</body>
+</html>
